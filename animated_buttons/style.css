@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+::selection{
+  background: #ddd;
+}
+
+@keyframes bounce {
+  0%{
+    transform: translateY(0);
+  }
+
+  40%{
+    transform: translateY(-5px);
+  }
+
+  75%{
+    transform: translateY(2px);
+  }
+
+  100%{
+    transform: translateY(0);
+  }
+}
+
+@keyframes btn3bounce {
+  0%{
+    transform: translateY(0);
+  }
+
+  40%{
+    transform: translateY(5px);
+  }
+
+  75%{
+    transform: translateY(-2px);
+  }
+
+  100%{
+    transform: translateY(0);
+  }
+}
+
+@keyframes btn4bounce {
+  0%{
+    transform: translateX(0);
+  }
+
+  40%{
+    transform: translateX(5px);
+  }
+
+  75%{
+    transform: translateX(-2px);
+  }
+
+  100%{
+    transform: translateX(0);
+  }
+}
+
+@keyframes btn4abounce {
+  0%{
+    transform: translateX(0);
+  }
+
+  40%{
+    transform: translateX(5px);
+  }
+
+  75%{
+    transform: translateX(-2px);
+  }
+
+  100%{
+    transform: translateX(0);
+  }
+}
+
+
+/*--------------------  --------------------*/
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  font-family: 'poppins', sans-serif;
+}
+
+/*-------------------- Header area --------------------*/
+.header_content{
+  box-sizing: border-box;
+  /* background: teal; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 10vh;
+  overflow: hidden;
+  border-bottom: 2px solid #ddd;
+  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.15);
+}
+
+h1{
+  margin-left: 5%;
+}
+h1 a{
+  color: #000;
+  text-decoration: none;
+}
+.main_menu{
+  margin-right: 5%;
+}
+.main_menu ul{
+  list-style: none;
+}
+.main_menu li{
+  display: inline-block;
+  transition: 0.3s;
+  border-radius: 5px
+}
+.main_menu li a{
+  display: block;
+  text-decoration: none;
+  color:#000;
+  padding: 10px 20px;
+}
+.main_menu li:hover{
+  background: #ddd;
+  border-radius: 5px;
+}
+.main_menu ul .selected{
+  background: #ddd;
+}
+
+/*-------------------- Content area --------------------*/
+.container{
+  /* background: pink; */
+  width: 100vw;
+  height: 80vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.content_area{
+  /* background: red; */
+  width: 50vw;
+  height: 60vh;
+  border-radius: 10px;
+  overflow:auto;
+  border: 1px solid #ddd;
+  box-shadow: 0 5px 10px #00000079;
+}
+h3{
+  text-align: center;
+  margin: 20px 0;
+}
+
+/*-------------------- Button area --------------------*/
+.button_area{
+  /* background: blue; */
+  text-align: center;
+  width: 100%;
+  height: 448px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.btn1{
+  background: #dfbdff;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  border-radius: 5px;
+  transition: 0.5s;
+  border: 2px solid #dfbdff;
+}
+.btn1 a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 100%;
+  transition: 1s;
+}
+.btn1:hover{
+  transform:translateY(-10px);
+  background: #fff;
+  border: 2px solid blueviolet;
+  box-shadow: 0 5px 10px #dfbdff;
+}
+.btn1 a:hover{
+  color:blueviolet;
+}
+
+.btn1::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 5px solid blueviolet;
+  animation: border-top 3s infinite alternate;
+}
+@keyframes border-top{
+  0%   {width:0px; height: 0px;}
+  100% {width: 200px; height: 0px;}
+}
+
+/* ---------- btn2 ---------- */
+.btn2{
+  background: black;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: 0.3s;
+  border: 2px solid #000;
+}
+.btn2 a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  padding: 50%;
+  transition: 1.5s;
+}
+.btn2:hover{
+  background: #fff;
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+.btn2 a:hover{
+  color: #000;
+  animation: bounce 0.5s;
+}
+/* ---------- btn3 ---------- */
+.btn3{
+  background: #fff;
+  height: 50px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.2s;
+}
+.btn3 a{
+  color:#000;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 50%;
+  transition: 0.4s;
+}
+.btn3:active{
+  background: black;
+}
+.btn3:active a{
+  color: #fff;
+}
+.btn3:hover{
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+.btn3 a:hover{
+  animation: btn3bounce 0.5s;
+}
+
+/* ---------- btn4 ---------- */
+.btn4{
+  background: black;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  overflow:hidden;
+  border-bottom: 5px solid #000;
+  transition: 0.5s;
+}
+.btn4 a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  padding: 100%;  
+}
+.btn4 a:hover{
+  animation: btn4abounce 0.7s;  
+}
+.btn4:hover{
+  animation: btn4bounce 0.5s;
+  border-bottom: 5px solid #c71c58;
+  background: #f8a5c2;
+}
+
+/* -------------------- footer area -------------------- */
+footer{
+  box-sizing: border-box;
+  width: 100vw;
+  height: 10vh;
+  /* background: teal; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid #ddd;
+  box-shadow: 0 -1px 20px rgba(0, 0, 0, 0.15);
+}

@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+::selection{
+  background: #ddd;
+}
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  font-family: 'poppins', sans-serif;
+}
+
+/*-------------------- Header area --------------------*/
+.header_content{
+  box-sizing: border-box;
+  /* background: teal; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 10vh;
+  overflow: hidden;
+  border-bottom: 2px solid #ddd;
+  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.15);
+}
+h1{
+  color: #000;
+  margin-left: 5%;
+  cursor: pointer;
+}
+.main_menu{
+  margin-right: 5%;
+}
+.main_menu ul{
+  list-style: none;
+}
+.main_menu li{
+  display: inline-block;
+  transition: 0.3s;
+}
+.main_menu li a{
+  display: block;
+  text-decoration: none;
+  color:#000;
+  padding: 10px 20px;
+}
+.main_menu li:hover{
+  background: #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.header_content{
+  box-sizing: border-box;
+  /* background: teal; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 10vh;
+  overflow: hidden;
+  border-bottom: 2px solid #ddd;
+}
+h1{
+  color: #000;
+  margin-left: 5%;
+}
+.main_menu{
+  margin-right: 5%;
+}
+.main_menu ul{
+  list-style: none;
+}
+.main_menu li{
+  display: inline-block;
+  transition: 0.3s;
+}
+.main_menu li a{
+  display: block;
+  text-decoration: none;
+  color:#000;
+  padding: 10px 20px;
+}
+.main_menu li:hover{
+  background: #ddd;
+  border-radius: 5px;
+}
+/*-------------------- Content area --------------------*/
+.container{
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#signup_section{
+  max-width: 400px;
+  width: 40%;
+  height: 55%;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 5px 10px #00000079;
+}
+h2{
+  text-align: center;
+  margin-top: 10%;
+}
+form{
+  margin: 10%;
+}
+.child_div{
+  text-align: center;
+}
+.child_div label{
+  display: block;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.child_div input{
+  width: 90%;
+  padding: 10px 5%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 3px solid #ddd;
+  outline: none;
+  font-size: 15px;
+}
+.child_div input:focus{
+  outline: 1px solid #ddd;
+}
+.child_div a{
+  display: inline-block;
+  background: rgb(153, 153, 153);
+  padding: 10px 40px;
+  border-radius: 10px;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.4s;
+}
+.child_div a:hover{
+  background: black;
+  transform: scale(1.05);
+  box-shadow: 3px 6px 1px #2c2c2c7e;
+}
+
+/*-------------------- footer area --------------------*/
+footer{
+  box-sizing: border-box;
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid #ddd;
+  box-shadow: 0 -1px 20px rgba(0, 0, 0, 0.15);
+}

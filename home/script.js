@@ -1,0 +1,1 @@
+alert('Thanks for joining us. Please press the OK to continue')
